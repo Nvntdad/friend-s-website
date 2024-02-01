@@ -139,7 +139,7 @@ button:hover{
     }
 
     .image-wrapper img{
-        padding-left: 35px;
+        /* padding-left: 35px; */
         max-width: 300px;
     }
 }
