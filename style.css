@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    font-family: 'poppins','sans-serif';
+}
+
+a{
+    text-decoration: none;
+    color: #433f3f;
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #433f3f;
+    background-color: rgb(190, 153, 225);
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(202, 171, 237) 0%, rgba(255,255,255,1) 100%);
+    min-height: 100vh;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.glass-container{
+    display: block;
+    max-width: 72vw;
+    margin-top: 10vh;
+    margin-bottom: 38px;
+    background: rgba(255, 225, 225, 0.067);
+    padding: 50px;
+    border: 2px solid #938d8d;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,.29);
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.6px);
+}
+
+ul.nav-links{
+    margin: 0;
+    float: left;
+    /* margin-top: 100px; */
+    list-style: none;
+    display: flex;
+}
+
+li.nav-link{
+    /* padding-top: 100px; */
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.main{
+    /* margin-top: 50px; */
+    display: inline-block;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.main h2{
+    margin-top: 50px;
+    font-size: 35px;
+}
+.main p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 80px;
+}
+
+button{
+    margin-top: 80px;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    color: #797979;
+    background-color: transparent;
+    border: 1px solid #635f5f;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    border-color: rgb(69, 3, 122);
+    background-color: rgba(255, 255, 255, 0.322);
+}
+
+.image-wrapper{
+    display: flex;
+    margin-top: 5vh;
+    position: relative;
+}
+
+
+.image-wrapper img{
+    display: flex;
+    align-items: center;
+
+    max-width: 500px;
+    /* margin-top: -50%; */
+    /* padding-bottom:/ -50%; */
+}
+
+.attrebute{
+    position: absolute;
+
+}
+
+@media screen and (max-width:1075px) {
+    .content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    li.nav-link{
+        font-size: 13px;
+    }
+
+    .main h2{
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 13px;
+    }
+
+    .image-wrapper img{
+        padding-left: 35px;
+        max-width: 300px;
+    }
+}
