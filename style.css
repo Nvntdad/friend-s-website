@@ -6,7 +6,7 @@
 
 a{
     text-decoration: none;
-    color: #433f3f;
+    color: #be90e9;
 }
 
 body{
@@ -14,30 +14,65 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #433f3f;
+    color: #be90e9;
     background-color: rgb(190, 153, 225);
     background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(202, 171, 237) 0%, rgba(255,255,255,1) 100%);
     min-height: 100vh;
 
 }
 
-.container{
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* box-sizing: border-box; */
+    /* width: 100vw; */
+    /* height: auto; */
+    z-index: -9999;
+    /* object-fit: cover; */
+}
+
+@media (min-aspect-ratio: 16/9){
+    .background{
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background{
+        width: auto;
+        height: 100vh;
+    }
+}
+
+.container{ 
+    z-index: 11111;
     display: flex;
     align-items: center;
 }
 
 .glass-container{
+
     display: block;
-    max-width: 72vw;
-    margin-top: 10vh;
-    margin-bottom: 38px;
+    max-width: 75vw;
+    /* margin-top: 10vh; */
+    /* margin-bottom: 38px; */
     background: rgba(255, 225, 225, 0.067);
-    padding: 50px;
-    border: 2px solid #938d8d;
+    padding: 40px;
+    border: 2px solid #dab8ff;
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0,0,0,.29);
-    backdrop-filter: blur(11.1px);
+    box-shadow: 0 4px 30px rgba(6, 5, 5, 0.381);
+    backdrop-filter: blur(7.1px);
     -webkit-backdrop-filter: blur(11.6px);
+}
+
+
+
+.nav-bar{
+display: flex;
+align-items: center;
+/* justify-content: center; */
 }
 
 ul.nav-links{
@@ -67,13 +102,13 @@ li.nav-link{
 }
 
 .main h2{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 35px;
 }
 .main p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 23px;
-    margin-top: 80px;
+    margin-top: 55px;
 }
 
 button{
@@ -81,9 +116,9 @@ button{
     width: 100%;
     height: 40px;
     font-size: 15px;
-    color: #797979;
+    color: #cba7f1;
     background-color: transparent;
-    border: 1px solid #635f5f;
+    border: 1px solid #e2abfb;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -91,7 +126,7 @@ button{
 
 button:hover{
     border-color: rgb(69, 3, 122);
-    background-color: rgba(255, 255, 255, 0.322);
+    background-color: rgba(193, 151, 247, 0.322);
 }
 
 .image-wrapper{
@@ -104,7 +139,7 @@ button:hover{
 .image-wrapper img{
     display: flex;
     align-items: center;
-
+    border-radius: 5%;
     max-width: 500px;
     /* margin-top: -50%; */
     /* padding-bottom:/ -50%; */
@@ -118,6 +153,13 @@ button:hover{
 @media screen and (max-width:1075px) {
     .content{
         flex-direction: column;
+    }
+
+    
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 }
 
