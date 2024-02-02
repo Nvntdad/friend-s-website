@@ -6,7 +6,7 @@
 
 a{
     text-decoration: none;
-    color: #433f3f;
+    color: #c892ef;
 }
 
 body{
@@ -14,12 +14,35 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #433f3f;
+    color: #c892ef;
     background-color: rgb(190, 153, 225);
     background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(202, 171, 237) 0%, rgba(255,255,255,1) 100%);
     min-height: 100vh;
 
 }
+
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio : 16/9){
+    
+.background{
+   width: 100%;
+   height: auto;
+}
+}
+
+@media (max-aspect-ratio : 16/9){
+    
+    .background{
+       width: auto;
+       height: 100%;
+    }
+    }
 
 .container{
     display: flex;
@@ -29,14 +52,14 @@ body{
 .glass-container{
     display: block;
     max-width: 72vw;
-    margin-top: 10vh;
-    margin-bottom: 38px;
+    /* margin-top: 10vh; */
+    /* margin-bottom: 38px; */
     background: rgba(255, 225, 225, 0.067);
-    padding: 50px;
-    border: 2px solid #938d8d;
+    padding: 40px;
+    border: 2px solid #c68bfa;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0,0,0,.29);
-    backdrop-filter: blur(11.1px);
+    backdrop-filter: blur(6.1px);
     -webkit-backdrop-filter: blur(11.6px);
 }
 
@@ -68,13 +91,13 @@ li.nav-link{
 }
 
 .main h2{
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 35px;
 }
 .main p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 23px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 button{
@@ -82,7 +105,7 @@ button{
     width: 100%;
     height: 40px;
     font-size: 15px;
-    color: #797979;
+    color: #c892ef;
     background-color: transparent;
     border: 1px solid #635f5f;
     border-radius: 10px;
@@ -91,8 +114,8 @@ button{
 }
 
 button:hover{
-    border-color: rgb(69, 3, 122);
-    background-color: rgba(255, 255, 255, 0.322);
+    border-color: #c892ef;
+    background-color: #59318d52;
 }
 
 .image-wrapper{
@@ -105,7 +128,7 @@ button:hover{
 .image-wrapper img{
     display: flex;
     align-items: center;
-
+    border-radius: 5%;
     max-width: 500px;
     /* margin-top: -50%; */
     /* padding-bottom:/ -50%; */
