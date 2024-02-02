@@ -41,7 +41,7 @@ body {
   max-width: 72vw;
   /* margin-top: 10vh; */
   /* margin-bottom: 38px; */
-  background: rgba(255, 225, 225, 0.067);
+  background: rgba(134, 101, 143, 0.245);
   padding: 40px;
   border: 2px solid #c68bfa;
   border-radius: 16px;
@@ -93,7 +93,7 @@ button {
   font-size: 15px;
   color: #c892ef;
   background-color: transparent;
-  border: 1px solid #635f5f;
+  border: 1px solid #e5a8f4;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
