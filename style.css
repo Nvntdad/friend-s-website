@@ -188,3 +188,8 @@ button:hover {
     justify-content: center;
   }
 }
+
+
+.imp{
+  display: grid;
+}
