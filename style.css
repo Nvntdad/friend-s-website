@@ -88,8 +88,9 @@ li.nav-link {
 
 button {
   margin-top: 60px;
-  width: 100%;
+  width: 20%;
   height: 40px;
+  margin-left: 15px;
   font-size: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.404);
   color: #c892ef;
@@ -192,4 +193,33 @@ button:hover {
 
 .imp{
   display: grid;
+}
+
+.btn{
+
+  display: flex;
+}
+
+.btn button a i{
+  font-size: 25px;
+  align-content: center;
+  color: rgb(61, 24, 104);
+}
+
+
+#twitter i{
+  color: rgb(0, 0, 0);
+}
+
+
+#arts i{
+  color: #13aff0;
+}
+
+#linked i{
+  color: #1059b3;
+}
+
+#insta i{
+  color: #db4fcd;
 }
