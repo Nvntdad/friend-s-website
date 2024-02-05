@@ -32,6 +32,7 @@ body {
 }
 
 .container {
+  margin-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -222,4 +223,72 @@ button:hover {
 
 #insta i{
   color: #db4fcd;
+}
+
+/* second slide */
+
+.container2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.glass-container2 {
+  display: block;
+  max-width: 72vw;
+  /* margin-top: 10vh; */
+  /* margin-bottom: 38px; */
+  background: rgba(134, 101, 143, 0.245);
+  padding: 40px;
+  padding-bottom: 0;
+  border: 2px solid #c68bfa;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.29);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(11.6px);
+}
+
+.content2{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.main2{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 75vw;
+}
+
+.content2 h2{
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.main2 button{
+  margin: 0;
+  margin-bottom: 50px;
+  min-width: 85px;
+  /* padding: 0; */
+}
+
+@media screen and (max-width: 1075px) {
+  .content2 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
+  .main2 h2 {
+    font-size: 28px;
+  }
+
+  .main2 > button {
+    font-size: 13px;
+  }
 }
