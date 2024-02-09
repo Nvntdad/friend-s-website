@@ -291,3 +291,8 @@ button:hover {
     font-size: 13px;
   }
 }
+
+::selection{
+  color: rgb(54, 4, 83);
+  background-color: #c68bfa;
+}

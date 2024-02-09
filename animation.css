@@ -207,3 +207,7 @@ button:hover {
   color: #db4fcd;
 }
 
+::selection{
+  color: rgb(54, 4, 83);
+  background-color: #c68bfa;
+}

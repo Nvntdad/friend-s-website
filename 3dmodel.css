@@ -200,3 +200,9 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.581);
 }
+
+
+::selection{
+  color: rgb(54, 4, 83);
+  background-color: #c68bfa;
+}
