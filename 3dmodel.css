@@ -96,6 +96,8 @@ button:hover {
 .image-wrapper {
   display: flex;
   margin-top: 5vh;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 

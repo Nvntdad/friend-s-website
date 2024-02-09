@@ -144,7 +144,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .image-wrapper video {
         width: 250px;
       }
