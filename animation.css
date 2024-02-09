@@ -52,7 +52,7 @@ body {
 }
 
 .content {
-  display: flex;
+  display: grid;
   width: 100%;
 }
 
@@ -106,10 +106,15 @@ button:hover {
   align-items: center;
   border-radius: 15px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.581);
-  width: 500px;
+  width: 80%;
  
 }
 
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .attrebute {
   position: absolute;
 }
@@ -144,7 +149,7 @@ button:hover {
 }
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 490px) {
     .image-wrapper video {
         width: 290px;
       }
